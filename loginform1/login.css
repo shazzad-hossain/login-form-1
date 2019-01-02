@@ -1,0 +1,68 @@
+body{
+	margin: 0px;
+	padding: 0px;
+	font-family: sans-serif;
+	background: url(image/background.jpg) no-repeat center center fixed;
+	height: 100%;
+	position: relative;
+	width: 100%;
+	background-size: cover;
+}
+.box{
+	position: absolute;
+	padding: 40px 10px 0px 10px;
+	margin: 150px 200px 200px 600px;
+	background: rgba(0,0,0,0.5);
+	height: 300px;
+	width: 400px;
+	box-shadow: 0px 20px 30px 0px #000000;
+	border-radius: 10px;
+}
+.box h2{
+	margin: 5px 0px 20px 150px;
+	padding: 0px;
+	color: #fff;
+}
+.inputBox{
+	position: relative;
+}
+.inputBox input{
+	width: 100%;
+	padding: 10px 0px 10px 0px;
+	font-size: 15px;
+	color: #fff;
+	border-bottom: 1px solid #fff;
+	border-left: none;
+	border-right: none;
+	border-top: none;
+	margin-bottom: 30px;
+	outline: none;
+	background: transparent;
+}
+.inputBox label{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	padding: 10px 0px 10px 0px;
+	font-size: 16px;
+	pointer-events: none;
+	transition: 0.5s;
+}
+.inputBox input:focus ~ label,
+.inputBox input:valid ~ label{
+	top: -20px;
+	left: 0px;
+	color: #DCDCDC;
+	font-size: 12px;
+}
+.box input[type="submit"]{
+	background: transparent;
+	border: none;
+	outline: none;
+	color: #fff;
+	background: #808080;
+	padding: 10px 20px;
+	cursor: pointer;
+	border-radius: 5px;
+	font-size: 16px;
+}
